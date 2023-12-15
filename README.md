@@ -21,6 +21,6 @@ Figure 3: Location of different peaks in a heartbeat.
 ## Mitral Valve Segmentation
 The segmentation of the mitral valve from an echocardiogram video is usually a key step in any automated pipeline for the diagnosis of diseases affecting the mitral valve. To tackle this task we relied on a convolutional neural network architecture often used for the segmentation of biomedical images called U-Net. One of the main challenges was the limited size of the training data that consisted of a few dozens of videos. To deal with this issue we used a network with pretrained weights (that we fine-tuned on our data) and multiple data-augmentation techniques (e.g. grid distortion). Finally, to gain some additional robustness, for the final model we opted for an ensemble of a handful of such networks.
 
-Figure 4: Frame from an chocardiogram on the right and the corresponding mask on the left.
+Figure 4: Frame from an echocardiogram on the right and the corresponding mask on the left.
 ![](mitral_valve_segmentation/figures/heart_mitral_valve.png)
 
